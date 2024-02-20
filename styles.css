@@ -4,7 +4,9 @@ body {
     padding: 0;
     background-color: #ffffff;
 }
-
+h2{
+    text-align: center;
+}
 img{
     height:400px;
 }
@@ -23,11 +25,21 @@ header p {
     color: #666;
 }
 
+#description{
+    margin:auto 10%;
+    padding:5%;
+    background:#d4e4bc;
+    color:black;
+    border-radius: 20px;
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px auto;
+    margin: 80px auto;
+    background:#cee0dc;
+    margin:3% 15%;
+    border-radius:15px
 }
 
 .image {
@@ -45,7 +57,7 @@ header p {
 
 .image p {
     margin-top: 10px;
-    color: #777;
+    color: black;
 }
 footer {
     text-align: center;
@@ -68,3 +80,14 @@ footer {
     height: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    .image {
+        flex-basis: calc(50% - 40px); /* Set width for each image to 50% for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        flex-basis: calc(100% - 40px); /* Set width for each image to 100% for even smaller screens */
+    }
+}
