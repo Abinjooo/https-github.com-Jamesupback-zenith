@@ -81,14 +81,50 @@ footer {
     height: 30px;
 }
 
-@media screen and (max-width: 768px) {
-    .image {
-        flex-basis: calc(50% - 40px); /* Set width for each image to 50% for smaller screens */
-    }
-}
 
 @media screen and (max-width: 480px) {
     .image {
         flex-basis: calc(100% - 40px); /* Set width for each image to 100% for even smaller screens */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+    
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    #description {
+        margin: auto 5%;
+    }
+    
+    .gallery {
+        margin: 40px auto;
+        padding: 0 5%;
+    }
+    
+    .image {
+        flex: 0 0 calc(50% - 40px);
+    }
+    
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    footer {
+        padding: 10px 0;
+    }
+    
+    .social-icons img {
+        width: 25px;
+        height: 25px;
     }
 }
