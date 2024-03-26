@@ -81,7 +81,9 @@ footer {
     height: 30px;
 }
 
-
+#logo{
+    border-radius:20px;
+}
 @media screen and (max-width: 480px) {
     .image {
         flex-basis: calc(100% - 40px); /* Set width for each image to 100% for even smaller screens */
